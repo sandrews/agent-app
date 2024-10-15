@@ -150,16 +150,18 @@ def main() -> None:
         if message.get("role") in ["system", "tool"]:
             continue
         # Display the message
-        with st.chat_message(message.get("role")):
-            content = message.get("content")
-            if isinstance(content, list):
-                for item in content:
-                    if item["type"] == "text":
-                        st.write(item["text"])
-                    elif item["type"] == "image_url":
-                        st.image(item["image_url"]["url"], use_column_width=True)
-            else:
-                st.write(content)
+        message_role = message.get("role")
+        if message_role is not None:
+            with st.chat_message(message_role):
+                content = message.get("content")
+                if isinstance(content, list):
+                    for item in content:
+                        if item["type"] == "text":
+                            st.write(item["text"])
+                        elif item["type"] == "image_url":
+                            st.image(item["image_url"]["url"], use_column_width=True)
+                else:
+                    st.write(content)
 
     # If last message is from a user, generate a new response
     last_message = st.session_state["messages"][-1]
@@ -229,9 +231,9 @@ def main() -> None:
             alert.empty()
 
         if example_agent.knowledge.vector_db:
-            if st.sidebar.button("Clear Knowledge Base"):
-                example_agent.knowledge.vector_db.clear()
-                st.sidebar.success("Knowledge base cleared")
+            if st.sidebar.button("Delete Knowledge Base"):
+                example_agent.knowledge.vector_db.delete()
+                st.sidebar.success("Knowledge base deleted")
 
     if example_agent.storage:
         example_agent_session_ids: List[str] = example_agent.storage.get_all_session_ids()
