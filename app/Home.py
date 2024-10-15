@@ -67,7 +67,6 @@ def main() -> None:
         st.markdown("#### :technologist: Please enter a username")
         return
 
-    st.sidebar.markdown("Agent Settings")
     # Get Model Id
     model_id = st.sidebar.selectbox("Model", options=["gpt-4o", "gpt-4o-mini"])
     # Set model_id in session state
