@@ -22,7 +22,7 @@ dependencies = [
   "python-docx",
   "ruff",
   "sqlalchemy",
-  "streamlit",
+  "streamlit==1.39.0",
   "tiktoken",
   "typer",
   "types-beautifulsoup4",
