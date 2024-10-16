@@ -7,6 +7,7 @@ authors = [{ name = "Phidata Team", email = "hello@phidata.com" }]
 
 dependencies = [
   "alembic",
+  "beautifulsoup4",
   "duckduckgo-search",
   "fastapi[standard]",
   "mypy",
@@ -24,6 +25,7 @@ dependencies = [
   "streamlit",
   "tiktoken",
   "typer",
+  "types-beautifulsoup4",
   "types-Pillow",
 ]
 
