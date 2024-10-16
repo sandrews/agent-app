@@ -47,7 +47,7 @@ openai==1.51.2
 packaging==24.1
 pandas==2.2.3
 pgvector==0.3.5
-phidata==2.5.1
+phidata==2.5.3
 pillow==10.4.0
 pluggy==1.5.0
 primp==0.6.4
