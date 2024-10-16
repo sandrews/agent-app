@@ -38,13 +38,13 @@ jobs:
         run: uv pip sync requirements.txt
 
       - name: Format with ruff
-        run: uv run ruff format .
+        run: ruff format .
 
       - name: Lint with ruff
-        run: uv run ruff check .
+        run: ruff check .
 
       - name: Type-check with mypy
-        run: uv run mypy .
+        run: mypy .
 
       # - name: Run tests
-      #   run: uv run pytest tests
+      #   run: pytest tests
