@@ -21,7 +21,7 @@ source .venv/bin/activate
 3. Setup workspace:
 
 ```sh
-phi ws setup
+ag ws setup
 ```
 
 4. Copy `workspace/example_secrets` to `workspace/secrets`:
@@ -53,7 +53,7 @@ export OPENAI_API_KEY=sk-***
 3. Start the workspace using:
 
 ```sh
-phi ws up
+ag ws up
 ```
 
 - Open [localhost:8501](http://localhost:8501) to view the Streamlit App.
@@ -62,17 +62,17 @@ phi ws up
 4. Stop the workspace using:
 
 ```sh
-phi ws down
+ag ws down
 ```
 
 ## Next Steps:
 
-- [Run the Agent App on AWS](https://docs.phidata.com/templates/agent-app/run-aws)
-- Read how to [manage the development application](https://docs.phidata.com/how-to/development-app)
-- Read how to [manage the production application](https://docs.phidata.com/how-to/production-app)
-- Read how to [add python libraries](https://docs.phidata.com/how-to/python-libraries)
-- Read how to [format & validate your code](https://docs.phidata.com/how-to/format-and-validate)
-- Read how to [manage secrets](https://docs.phidata.com/how-to/secrets)
-- Add [CI/CD](https://docs.phidata.com/how-to/ci-cd)
-- Add [database tables](https://docs.phidata.com/how-to/database-tables)
-- Read the [Agent App guide](https://docs.phidata.com/templates/agent-app)
+- [Run the Agent App on AWS](https://docs.agno.com/templates/agent-app/run-aws)
+- Read how to [manage the development application](https://docs.agno.com/how-to/development-app)
+- Read how to [manage the production application](https://docs.agno.com/how-to/production-app)
+- Read how to [add python libraries](https://docs.agno.com/how-to/python-libraries)
+- Read how to [format & validate your code](https://docs.agno.com/how-to/format-and-validate)
+- Read how to [manage secrets](https://docs.agno.com/how-to/secrets)
+- Add [CI/CD](https://docs.agno.com/how-to/ci-cd)
+- Add [database tables](https://docs.agno.com/how-to/database-tables)
+- Read the [Agent App guide](https://docs.agno.com/templates/agent-app)
